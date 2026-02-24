@@ -13,8 +13,9 @@ QBConfig.Money.PayCheckTimeOut = 10                                 -- The time 
 QBConfig.Money.PayCheckSociety = false                              -- If true paycheck will come from the society account that the player is employed at, requires qb-management
 
 QBConfig.Player = {}
-QBConfig.Player.HungerRate = 4.2 -- Rate at which hunger goes down.
-QBConfig.Player.ThirstRate = 3.8 -- Rate at which thirst goes down.
+QBConfig.Player.HungerRate = 0   -- DESATIVADO: Fome não diminui mais
+QBConfig.Player.ThirstRate = 0   -- DESATIVADO: Sede não diminui mais
+QBConfig.Player.DisableHungerThirst = true -- Flag global para desativar fome/sede
 QBConfig.Player.Bloodtypes = {
     'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-',
 }

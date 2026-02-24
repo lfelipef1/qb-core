@@ -98,7 +98,7 @@ function QBCore.Functions.LookAtEntity(entity, timeout, speed)
             currentHeading = currentHeading - turnSpeed
         end
         SetEntityHeading(ped, currentHeading)
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
         if (startTimeout + timeout) < GetGameTimer() then break end
     end
     SetEntityHeading(ped, targetHeading)
@@ -132,7 +132,7 @@ function QBCore.Functions.PlayAnim(animDict, animName, upperbodyOnly, duration)
             animPromise:reject(invoked .. ' :^1  Animation dictionary failed to load')
             return animPromise.value
         end
-        Wait(1)
+        Wait(1) -- Medellin Optimization: MANTER — carregamento animDict
     end
     TaskPlayAnim(ped, animDict, animName, 8.0, 8.0, runTime, flags, 0, true, true, true)
     Wait(10) -- Wait a bit for the animation to start, then check if it exists
@@ -360,7 +360,7 @@ function QBCore.Functions.LoadModel(model)
     if HasModelLoaded(model) then return end
     RequestModel(model)
     while not HasModelLoaded(model) do
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
     end
 end
 
@@ -884,7 +884,7 @@ function QBCore.Functions.RequestAnimDict(animDict)
     if HasAnimDictLoaded(animDict) then return end
     RequestAnimDict(animDict)
     while not HasAnimDictLoaded(animDict) do
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
     end
 end
 
@@ -952,7 +952,7 @@ function QBCore.Functions.LoadAnimSet(animSet)
     if HasAnimSetLoaded(animSet) then return end
     RequestAnimSet(animSet)
     while not HasAnimSetLoaded(animSet) do
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
     end
 end
 
@@ -960,7 +960,7 @@ function QBCore.Functions.LoadParticleDictionary(dictionary)
     if HasNamedPtfxAssetLoaded(dictionary) then return end
     RequestNamedPtfxAsset(dictionary)
     while not HasNamedPtfxAssetLoaded(dictionary) do
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
     end
 end
 

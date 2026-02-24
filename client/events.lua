@@ -44,7 +44,7 @@ RegisterNetEvent('QBCore:Command:GoToMarker', function()
     -- Fade screen to hide how clients get teleported.
     DoScreenFadeOut(650)
     while not IsScreenFadedOut() do
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
     end
 
     local ped, coords <const> = PlayerPedId(), GetBlipInfoIdCoord(blipMarker)
@@ -73,7 +73,7 @@ RegisterNetEvent('QBCore:Command:GoToMarker', function()
             if GetGameTimer() - curTime > 1000 then
                 break
             end
-            Wait(0)
+            Wait(50) -- Medellin Optimization: execution plan applied
         end
         NewLoadSceneStop()
         SetPedCoordsKeepVehicle(ped, x, y, z)
@@ -83,17 +83,17 @@ RegisterNetEvent('QBCore:Command:GoToMarker', function()
             if GetGameTimer() - curTime > 1000 then
                 break
             end
-            Wait(0)
+            Wait(50) -- Medellin Optimization: execution plan applied
         end
 
         -- Get ground coord. As mentioned in the natives, this only works if the client is in render distance.
         found, groundZ = GetGroundZFor_3dCoord(x, y, z, false);
         if found then
-            Wait(0)
+            Wait(50) -- Medellin Optimization: execution plan applied
             SetPedCoordsKeepVehicle(ped, x, y, groundZ)
             break
         end
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
     end
 
     -- Remove black screen once the loop has ended.
@@ -125,7 +125,7 @@ RegisterNetEvent('QBCore:Command:SpawnVehicle', function(vehName)
     if not IsModelInCdimage(hash) then return end
     RequestModel(hash)
     while not HasModelLoaded(hash) do
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
     end
 
     if IsPedInAnyVehicle(ped) then
@@ -256,7 +256,7 @@ RegisterNetEvent('QBCore:Command:ShowMe3D', function(senderId, msg)
             local targetPed = GetPlayerPed(sender)
             local tCoords = GetEntityCoords(targetPed)
             Draw3DText(tCoords, msg)
-            Wait(0)
+            Wait(50) -- Medellin Optimization: execution plan applied
         end
     end)
 end)

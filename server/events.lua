@@ -56,14 +56,14 @@ local function onPlayerConnecting(name, _, deferrals)
     end
 
     if QBCore.Config.Server.Whitelist then
-        Wait(0)
+        Wait(50) -- Medellin Optimization: execution plan applied
         deferrals.update(string.format(Lang:t('info.checking_whitelisted'), name))
         if not QBCore.Functions.IsWhitelisted(src) then
             return deferrals.done(Lang:t('error.not_whitelisted'))
         end
     end
 
-    Wait(0)
+    Wait(50) -- Medellin Optimization: execution plan applied
     deferrals.update(string.format('Hello %s. Your license is being checked', name))
     local license = QBCore.Functions.GetIdentifier(src, 'license')
 
@@ -73,7 +73,7 @@ local function onPlayerConnecting(name, _, deferrals)
         return deferrals.done(Lang:t('error.duplicate_license'))
     end
 
-    Wait(0)
+    Wait(50) -- Medellin Optimization: execution plan applied
     deferrals.update(string.format(Lang:t('info.checking_ban'), name))
 
     if not bansTableExists then
@@ -84,7 +84,7 @@ local function onPlayerConnecting(name, _, deferrals)
     if not success then return deferrals.done(Lang:t('error.connecting_database_error')) end
     if isBanned then return deferrals.done(reason) end
 
-    Wait(0)
+    Wait(50) -- Medellin Optimization: execution plan applied
     deferrals.update(string.format(Lang:t('info.join_server'), name))
     deferrals.done()
 
@@ -153,17 +153,11 @@ RegisterNetEvent('QBCore:UpdatePlayer', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     if not Player then return end
-    local newHunger = Player.PlayerData.metadata['hunger'] - QBCore.Config.Player.HungerRate
-    local newThirst = Player.PlayerData.metadata['thirst'] - QBCore.Config.Player.ThirstRate
-    if newHunger <= 0 then
-        newHunger = 0
-    end
-    if newThirst <= 0 then
-        newThirst = 0
-    end
-    Player.Functions.SetMetaData('thirst', newThirst)
-    Player.Functions.SetMetaData('hunger', newHunger)
-    TriggerClientEvent('hud:client:UpdateNeeds', src, newHunger, newThirst)
+    -- DESATIVADO: Fome e sede não diminuem mais
+    -- Mantém os valores sempre em 100
+    Player.Functions.SetMetaData('hunger', 100)
+    Player.Functions.SetMetaData('thirst', 100)
+    TriggerClientEvent('hud:client:UpdateNeeds', src, 100, 100)
     Player.Functions.Save()
 end)
 

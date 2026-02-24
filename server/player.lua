@@ -491,8 +491,11 @@ end
 function QBCore.Player.Save(source)
     local ped = GetPlayerPed(source)
     local pcoords = GetEntityCoords(ped)
+    local heading = GetEntityHeading(ped)
     local PlayerData = QBCore.Players[source].PlayerData
     if PlayerData then
+        -- Salva x,y,z e heading (w) para o medellin-spawn restaurar a orientação correta
+        local posToSave = json.encode({ x = pcoords.x, y = pcoords.y, z = pcoords.z, w = heading })
         MySQL.insert('INSERT INTO players (citizenid, cid, license, name, money, charinfo, job, gang, position, metadata) VALUES (:citizenid, :cid, :license, :name, :money, :charinfo, :job, :gang, :position, :metadata) ON DUPLICATE KEY UPDATE cid = :cid, name = :name, money = :money, charinfo = :charinfo, job = :job, gang = :gang, position = :position, metadata = :metadata', {
             citizenid = PlayerData.citizenid,
             cid = tonumber(PlayerData.cid),
@@ -502,7 +505,7 @@ function QBCore.Player.Save(source)
             charinfo = json.encode(PlayerData.charinfo),
             job = json.encode(PlayerData.job),
             gang = json.encode(PlayerData.gang),
-            position = json.encode(pcoords),
+            position = posToSave,
             metadata = json.encode(PlayerData.metadata)
         })
         if GetResourceState('qb-inventory') ~= 'missing' then exports['qb-inventory']:SaveInventory(source) end

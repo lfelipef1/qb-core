@@ -347,14 +347,14 @@ function QBCore.Functions.SpawnVehicle(source, model, coords, warp)
     if not coords then coords = GetEntityCoords(ped) end
     local heading = coords.w and coords.w or 0.0
     local veh = CreateVehicle(model, coords.x, coords.y, coords.z, heading, true, true)
-    while not DoesEntityExist(veh) do Wait(0) end
+    while not DoesEntityExist(veh) do Wait(50) end
     if warp then
         while GetVehiclePedIsIn(ped) ~= veh do
-            Wait(0)
+            Wait(50) -- Medellin Optimization: execution plan applied
             TaskWarpPedIntoVehicle(ped, veh, -1)
         end
     end
-    while NetworkGetEntityOwner(veh) ~= source do Wait(0) end
+    while NetworkGetEntityOwner(veh) ~= source do Wait(50) end
     return veh
 end
 
@@ -373,7 +373,7 @@ function QBCore.Functions.CreateAutomobile(source, model, coords, warp)
     local heading = coords.w and coords.w or 0.0
     local CreateAutomobile = `CREATE_AUTOMOBILE`
     local veh = Citizen.InvokeNative(CreateAutomobile, model, coords, heading, true, true)
-    while not DoesEntityExist(veh) do Wait(0) end
+    while not DoesEntityExist(veh) do Wait(50) end
     if warp then TaskWarpPedIntoVehicle(GetPlayerPed(source), veh, -1) end
     return veh
 end
@@ -395,7 +395,7 @@ function QBCore.Functions.CreateVehicle(source, model, vehtype, coords, warp)
     if not coords then coords = GetEntityCoords(GetPlayerPed(source)) end
     local heading = coords.w and coords.w or 0.0
     local veh = CreateVehicleServerSetter(model, vehtype, coords, heading)
-    while not DoesEntityExist(veh) do Wait(0) end
+    while not DoesEntityExist(veh) do Wait(50) end
     if warp then TaskWarpPedIntoVehicle(GetPlayerPed(source), veh, -1) end
     return veh
 end
