@@ -285,6 +285,12 @@ QBShared.Items = {
     rubber                       = { name = 'rubber', label = 'Rubber', weight = 100, type = 'item', image = 'rubber.png', unique = false, useable = false, shouldClose = false, description = 'Rubber, I believe you can make your own rubber ducky with it :D' },
     glass                        = { name = 'glass', label = 'Glass', weight = 100, type = 'item', image = 'glass.png', unique = false, useable = false, shouldClose = false, description = 'It is very fragile, watch out' },
 
+    -- Peças de Arma (Farm Facções)
+    pecadearma                   = { name = 'pecadearma', label = 'Peça de Arma', weight = 200, type = 'item', image = 'pecadearma.png', unique = false, useable = false, shouldClose = false, description = 'Uma peça metálica usada na fabricação de armas' },
+    gatilho                      = { name = 'gatilho', label = 'Gatilho', weight = 150, type = 'item', image = 'gatilho.png', unique = false, useable = false, shouldClose = false, description = 'Mecanismo de disparo para armas de fogo' },
+    canoarma                     = { name = 'canoarma', label = 'Cano de Arma', weight = 300, type = 'item', image = 'canoarma.png', unique = false, useable = false, shouldClose = false, description = 'Cano metálico usado na montagem de armas' },
+    coronha                      = { name = 'coronha', label = 'Coronha', weight = 250, type = 'item', image = 'coronha.png', unique = false, useable = false, shouldClose = false, description = 'Coronha de madeira ou polímero para armas' },
+
     -- Tools
     lockpick                     = { name = 'lockpick', label = 'Lockpick', weight = 300, type = 'item', image = 'lockpick.png', unique = false, useable = true, shouldClose = true, description = 'Very useful if you lose your keys a lot.. or if you want to use it for something else...' },
     advancedlockpick             = { name = 'advancedlockpick', label = 'Advanced Lockpick', weight = 500, type = 'item', image = 'advancedlockpick.png', unique = false, useable = true, shouldClose = true, description = 'If you lose your keys a lot this is very useful... Also useful to open your beers' },
@@ -386,5 +392,43 @@ QBShared.Items = {
     -- Crafting table's
     item_bench = {name = "item_bench", label = "Workbench", weight = 15000, type = "item", image = "workbench.png", unique = true, useable = true, shouldClose = false, combinable = nil, description = "A workbench to craft items."},
     attachment_bench = {name = "attachment_bench", label = "Attachment Workbench", weight = 15000, type = "item", image = "attworkbench.png", unique = true, useable = true, shouldClose = false, combinable = nil, description = "A workbench for crafting attachments."},
+
+    -- ========================================================================
+    -- ITENS DE FACÇÕES MEDELLIN (Munição, Lavagem, Drogas, Muambas, Cartões)
+    -- ========================================================================
+
+    -- Munição (Cartuchos e Pólvora)
+    cartucho_m1                  = { name = 'cartucho_m1', label = 'Cartucho M1', weight = 100, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Cartucho de munição calibre leve' },
+    cartucho_m2                  = { name = 'cartucho_m2', label = 'Cartucho M2', weight = 100, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Cartucho de munição calibre médio' },
+    cartucho_m3                  = { name = 'cartucho_m3', label = 'Cartucho M3', weight = 150, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Cartucho de munição calibre pesado' },
+    cartucho_m4                  = { name = 'cartucho_m4', label = 'Cartucho M4', weight = 150, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Cartucho de munição calibre especial' },
+    cartucho_m5                  = { name = 'cartucho_m5', label = 'Cartucho M5', weight = 200, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Cartucho de munição calibre anti-material' },
+    polvora                      = { name = 'polvora', label = 'Pólvora', weight = 100, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Pólvora para fabricação de munição' },
+
+    -- Lavagem (Materiais)
+    elastic                      = { name = 'elastic', label = 'Elástico', weight = 50, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Elástico para amarrar maços de dinheiro' },
+    papelmoeda                   = { name = 'papelmoeda', label = 'Papel Moeda', weight = 50, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Papel especial usado na lavagem de dinheiro' },
+
+    -- Drogas (Materiais e Produtos)
+    cocapaste                    = { name = 'cocapaste', label = 'Pasta de Coca', weight = 200, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Pasta base para processamento' },
+    bucket                       = { name = 'bucket', label = 'Balde', weight = 500, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Um balde para mistura de substâncias' },
+    weed                         = { name = 'weed', label = 'Maconha', weight = 200, type = 'item', image = 'weed_baggy.png', unique = false, useable = false, shouldClose = false, description = 'Erva para processamento' },
+    cannabisseed                 = { name = 'cannabisseed', label = 'Semente de Cannabis', weight = 50, type = 'item', image = 'weed_seed.png', unique = false, useable = false, shouldClose = false, description = 'Semente para plantio de cannabis' },
+    anador                       = { name = 'anador', label = 'Anador', weight = 50, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Medicamento analgésico' },
+    doril                        = { name = 'doril', label = 'Doril', weight = 50, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Medicamento analgésico' },
+    xarope                       = { name = 'xarope', label = 'Xarope', weight = 200, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Xarope para fabricação de lean' },
+    amphetamine                  = { name = 'amphetamine', label = 'Anfetamina', weight = 100, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Substância estimulante' },
+    compost                      = { name = 'compost', label = 'Adubo', weight = 300, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Adubo orgânico para plantio' },
+    silk                         = { name = 'silk', label = 'Seda', weight = 50, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Seda para enrolar cigarros' },
+
+    -- Muamba / Loja (Itens de contrabando)
+    cellphone                    = { name = 'cellphone', label = 'Celular', weight = 300, type = 'item', image = 'phone.png', unique = false, useable = false, shouldClose = false, description = 'Celular de contrabando' },
+    hamburger                    = { name = 'hamburger', label = 'Hambúrguer', weight = 300, type = 'item', image = 'sandwich.png', unique = false, useable = true, shouldClose = true, description = 'Um hambúrguer suculento' },
+    water                        = { name = 'water', label = 'Água', weight = 300, type = 'item', image = 'water_bottle.png', unique = false, useable = true, shouldClose = true, description = 'Garrafa de água' },
+    soda                         = { name = 'soda', label = 'Refrigerante', weight = 300, type = 'item', image = 'water_bottle.png', unique = false, useable = true, shouldClose = true, description = 'Uma lata de refrigerante' },
+
+    -- Muambas (Materiais)
+    linha                        = { name = 'linha', label = 'Linha', weight = 50, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Linha para costura de contrabando' },
+    pano                         = { name = 'pano', label = 'Pano', weight = 100, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Pano para embalagem de contrabando' },
 
 }
