@@ -456,6 +456,15 @@ QBShared.Items = {
     travapolicia2                = { name = 'travapolicia2', label = 'Trava Policial Tipo 2', weight = 500, type = 'item', image = 'travapolicia2.png', unique = false, useable = false, shouldClose = false, description = 'Dispositivo de trava policial avançado' },
     chumbo                       = { name = 'chumbo', label = 'Chumbo', weight = 500, type = 'item', image = 'chumbo.png', unique = false, useable = false, shouldClose = false, description = 'Minério de chumbo para fabricação' },
 
+    -- Itens de Roubo de Residencia
+    celular                      = { name = 'celular', label = 'Celular Roubado', weight = 300, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Celular obtido em roubo de residencia' },
+    playstation                  = { name = 'playstation', label = 'Playstation Roubado', weight = 3000, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Console de videogame obtido em roubo' },
+    tv                           = { name = 'tv', label = 'TV Roubada', weight = 5000, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Televisao obtida em roubo de residencia' },
+    telescope                    = { name = 'telescope', label = 'Telescopio Roubado', weight = 2000, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Telescopio obtido em roubo' },
+    art                          = { name = 'art', label = 'Quadro de Arte', weight = 1500, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Quadro de arte obtido em roubo' },
+    microondas                   = { name = 'microondas', label = 'Microondas Roubado', weight = 4000, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Microondas obtido em roubo' },
+    coffeemaker                  = { name = 'coffeemaker', label = 'Cafeteira Roubada', weight = 1500, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Cafeteira obtida em roubo' },
+
     -- ============================================================
     -- Empregos Civis (Leiteiro, Caçador, Lenhador, Fazendeiro, etc.)
     -- ============================================================
