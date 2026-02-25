@@ -21,6 +21,7 @@ QBShared.Jobs = {
 	lenhador = { label = 'Lenhador', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Lenhador', payment = 50 } } },
 	ifood = { label = 'Entregador iFood', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Entregador', payment = 50 } } },
 	cacador = { label = 'Caçador', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Caçador', payment = 50 } } },
+	fazendeiro = { label = 'Fazendeiro', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Agricultor', payment = 50 } } },
 
 	police = {
 		label = 'Law Enforcement',
