@@ -7,17 +7,17 @@
     --font-weight-light: 300;
 
     /* Colors */
-    --md-primary: #0061a4;
+    --md-primary: #00ff88;
     --md-on-primary: #ffffff;
-    --md-primary-container: #d1e4ff;
-    --md-on-primary-container: #001d36;
+    --md-primary-container: #ccffe6;
+    --md-on-primary-container: #003318;
 
-    --md-error: #ba1a1a;
+    --md-error: #00cc6a;
     --md-on-error: #ffffff;
-    --md-error-container: #ffdad6;
-    --md-on-error-container: #410002;
+    --md-error-container: #ccffe6;
+    --md-on-error-container: #003318;
 
-    --md-success: #006e1c;
+    --md-success: #00cc6a;
     --md-on-success: #ffffff;
     --md-success-container: #9df996;
     --md-on-success-container: #002106;
@@ -27,10 +27,10 @@
     --md-warning-container: #ffdf93;
     --md-on-warning-container: #271900;
 
-    --md-info: #0062a1;
+    --md-info: #00ff88;
     --md-on-info: #ffffff;
-    --md-info-container: #d0e4ff;
-    --md-on-info-container: #001d35;
+    --md-info-container: #ccffe6;
+    --md-on-info-container: #003318;
 
     /* Surface colors */
     --md-surface: #fcfcff;

@@ -11,6 +11,16 @@ QBShared.Jobs = {
 	garbage = { label = 'Garbage', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Collector', payment = 50 } } },
 	vineyard = { label = 'Vineyard', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Picker', payment = 50 } } },
 	hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Sales', payment = 50 } } },
+	valores = { label = 'Transp. Valores', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Motorista', payment = 50 } } },
+	turismo = { label = 'Ônibus Turismo', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Motorista', payment = 50 } } },
+	leiteiro = { label = 'Leiteiro', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Entregador', payment = 50 } } },
+	carteiro = { label = 'Carteiro', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Entregador', payment = 50 } } },
+	frango = { label = 'Entregador Frango', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Entregador', payment = 50 } } },
+	limpeza = { label = 'Limpeza Imóveis', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Faxineiro', payment = 50 } } },
+	construtor = { label = 'Construtor Civil', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Operário', payment = 50 } } },
+	lenhador = { label = 'Lenhador', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Lenhador', payment = 50 } } },
+	ifood = { label = 'Entregador iFood', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Entregador', payment = 50 } } },
+	cacador = { label = 'Caçador', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Caçador', payment = 50 } } },
 
 	police = {
 		label = 'Law Enforcement',

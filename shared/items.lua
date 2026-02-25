@@ -442,4 +442,28 @@ QBShared.Items = {
     linha                        = { name = 'linha', label = 'Linha', weight = 50, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Linha para costura de contrabando' },
     pano                         = { name = 'pano', label = 'Pano', weight = 100, type = 'item', image = 'placeholder.png', unique = false, useable = false, shouldClose = false, description = 'Pano para embalagem de contrabando' },
 
+    -- ============================================================
+    -- Empregos Ilegais (Roubos, Desmanche, etc.)
+    -- ============================================================
+    dollars2                     = { name = 'dollars2', label = 'Dinheiro Sujo', weight = 100, type = 'item', image = 'dirty_money.png', unique = false, useable = false, shouldClose = false, description = 'Dinheiro obtido ilegalmente' },
+    plantabaixa                  = { name = 'plantabaixa', label = 'Planta Baixa', weight = 200, type = 'item', image = 'plantabaixa.png', unique = false, useable = false, shouldClose = false, description = 'Planta baixa de um estabelecimento' },
+    bluecard                     = { name = 'bluecard', label = 'Cartão Azul', weight = 100, type = 'item', image = 'bluecard.png', unique = false, useable = false, shouldClose = false, description = 'Cartão de acesso azul para arrombamentos' },
+    blackcard                    = { name = 'blackcard', label = 'Cartão Preto', weight = 100, type = 'item', image = 'blackcard.png', unique = false, useable = false, shouldClose = false, description = 'Cartão de acesso preto para cofres' },
+    c4                           = { name = 'c4', label = 'C4', weight = 1000, type = 'item', image = 'c4.png', unique = false, useable = false, shouldClose = false, description = 'Explosivo plástico C4' },
+    watch                        = { name = 'watch', label = 'Relógio', weight = 200, type = 'item', image = 'watch.png', unique = false, useable = false, shouldClose = false, description = 'Relógio roubado da joalheria' },
+    tires                        = { name = 'tires', label = 'Pneus', weight = 2000, type = 'item', image = 'tires.png', unique = false, useable = false, shouldClose = false, description = 'Pneus retirados de um veículo' },
+    travapolicia1                = { name = 'travapolicia1', label = 'Trava Policial Tipo 1', weight = 500, type = 'item', image = 'travapolicia1.png', unique = false, useable = false, shouldClose = false, description = 'Dispositivo de trava policial' },
+    travapolicia2                = { name = 'travapolicia2', label = 'Trava Policial Tipo 2', weight = 500, type = 'item', image = 'travapolicia2.png', unique = false, useable = false, shouldClose = false, description = 'Dispositivo de trava policial avançado' },
+    chumbo                       = { name = 'chumbo', label = 'Chumbo', weight = 500, type = 'item', image = 'chumbo.png', unique = false, useable = false, shouldClose = false, description = 'Minério de chumbo para fabricação' },
+
+    -- ============================================================
+    -- Empregos Civis (Leiteiro, Caçador, Lenhador, Fazendeiro, etc.)
+    -- ============================================================
+    garrafaleite                 = { name = 'garrafaleite', label = 'Garrafa de Leite', weight = 500, type = 'item', image = 'milk.png', unique = false, useable = true, shouldClose = true, description = 'Garrafa de leite fresco' },
+    garrafavazia                 = { name = 'garrafavazia', label = 'Garrafa Vazia', weight = 100, type = 'item', image = 'garrafavazia.png', unique = false, useable = false, shouldClose = false, description = 'Garrafa de vidro vazia' },
+    meata                        = { name = 'meata', label = 'Carne Vermelha', weight = 500, type = 'item', image = 'meatA.png', unique = false, useable = false, shouldClose = false, description = 'Carne vermelha de caça' },
+    animalpelt                   = { name = 'animalpelt', label = 'Pele de Animal', weight = 1000, type = 'item', image = 'animalpelt.png', unique = false, useable = false, shouldClose = false, description = 'Pele de animal abatido na caça' },
+    woodlog                      = { name = 'woodlog', label = 'Tora de Madeira', weight = 2000, type = 'item', image = 'woodlog.png', unique = false, useable = false, shouldClose = false, description = 'Tora de madeira cortada' },
+    grao                         = { name = 'grao', label = 'Grãos', weight = 300, type = 'item', image = 'grao.png', unique = false, useable = false, shouldClose = false, description = 'Grãos colhidos na fazenda' },
+
 }
