@@ -343,18 +343,60 @@ end
 ---@return number
 function QBCore.Functions.SpawnVehicle(source, model, coords, warp)
     local ped = GetPlayerPed(source)
-    model = type(model) == 'string' and joaat(model) or model
+    local modelHash = type(model) == 'string' and joaat(model) or model
     if not coords then coords = GetEntityCoords(ped) end
     local heading = coords.w and coords.w or 0.0
-    local veh = CreateVehicle(model, coords.x, coords.y, coords.z, heading, true, true)
-    while not DoesEntityExist(veh) do Wait(50) end
-    if warp then
-        while GetVehiclePedIsIn(ped) ~= veh do
-            Wait(50) -- Medellin Optimization: execution plan applied
-            TaskWarpPedIntoVehicle(ped, veh, -1)
+    local timeout = 10000 -- 10 segundos de timeout
+    local elapsed = 0
+
+    print('^3[qb-core] [SpawnVehicle] Criando veiculo - modelo: ' .. tostring(model) .. ' hash: ' .. tostring(modelHash) .. ' para jogador: ' .. tostring(source) .. '^0')
+
+    local veh = CreateVehicle(modelHash, coords.x, coords.y, coords.z, heading, true, true)
+
+    if not veh or veh == 0 then
+        print('^1[qb-core] [SpawnVehicle] CreateVehicle retornou 0 ou nil para modelo: ' .. tostring(model) .. '^0')
+        return 0
+    end
+
+    -- Aguarda entidade existir com timeout
+    elapsed = 0
+    while not DoesEntityExist(veh) do
+        Wait(50)
+        elapsed = elapsed + 50
+        if elapsed >= timeout then
+            print('^1[qb-core] [SpawnVehicle] TIMEOUT esperando entidade existir para modelo: ' .. tostring(model) .. '^0')
+            if DoesEntityExist(veh) then DeleteEntity(veh) end
+            return 0
         end
     end
-    while NetworkGetEntityOwner(veh) ~= source do Wait(50) end
+
+    print('^2[qb-core] [SpawnVehicle] Entidade criada com sucesso: ' .. tostring(veh) .. '^0')
+
+    if warp then
+        elapsed = 0
+        while GetVehiclePedIsIn(ped) ~= veh do
+            Wait(50)
+            elapsed = elapsed + 50
+            TaskWarpPedIntoVehicle(ped, veh, -1)
+            if elapsed >= timeout then
+                print('^1[qb-core] [SpawnVehicle] TIMEOUT no warp para modelo: ' .. tostring(model) .. '^0')
+                break
+            end
+        end
+    end
+
+    -- Aguarda ownership com timeout
+    elapsed = 0
+    while NetworkGetEntityOwner(veh) ~= source do
+        Wait(50)
+        elapsed = elapsed + 50
+        if elapsed >= timeout then
+            print('^1[qb-core] [SpawnVehicle] TIMEOUT esperando ownership para modelo: ' .. tostring(model) .. ' (owner atual: ' .. tostring(NetworkGetEntityOwner(veh)) .. ')^0')
+            break
+        end
+    end
+
+    print('^2[qb-core] [SpawnVehicle] Veiculo pronto: ' .. tostring(model) .. ' entidade: ' .. tostring(veh) .. '^0')
     return veh
 end
 

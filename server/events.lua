@@ -262,8 +262,16 @@ end)
 -- use the netid on the client with the NetworkGetEntityFromNetworkId native
 -- convert it to a vehicle via the NetToVeh native
 QBCore.Functions.CreateCallback('QBCore:Server:SpawnVehicle', function(source, cb, model, coords, warp)
+    print('^3[qb-core] [SpawnCallback] Recebido pedido de spawn - modelo: ' .. tostring(model) .. ' jogador: ' .. tostring(source) .. '^0')
     local veh = QBCore.Functions.SpawnVehicle(source, model, coords, warp)
-    cb(NetworkGetNetworkIdFromEntity(veh))
+    if not veh or veh == 0 then
+        print('^1[qb-core] [SpawnCallback] SpawnVehicle falhou para modelo: ' .. tostring(model) .. '^0')
+        cb(0)
+        return
+    end
+    local netId = NetworkGetNetworkIdFromEntity(veh)
+    print('^2[qb-core] [SpawnCallback] Spawn OK - modelo: ' .. tostring(model) .. ' netId: ' .. tostring(netId) .. '^0')
+    cb(netId)
 end)
 
 -- Use this for long distance vehicle spawning
