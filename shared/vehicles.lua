@@ -1345,7 +1345,8 @@ local Vehicles = {
     { model = '24humevof',             name = 'Hummer Humevof 2024',                     brand = 'Hummer',            price = 350000,  category = 'premium',           type = 'automobile',    shop = 'luxury' },
     { model = '2f2fgtr34',             name = 'Nissan GTR34',                            brand = 'Nissan',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = '2f2fgts',               name = 'Nissan GTS',                              brand = 'Nissan',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
-    { model = '2f2fmk4',               name = 'Toyota MK4',                              brand = 'Toyota',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que fnfmk4 (linha 1554)
+    -- { model = '2f2fmk4',               name = 'Toyota MK4',                              brand = 'Toyota',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = '2f2fmle7',              name = 'Mitsubishi Mle7',                         brand = 'Mitsubishi',        price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = '2f2frx7',               name = 'Mazda RX7',                               brand = 'Mazda',             price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = '2f2fs2000',             name = 'Honda S2000',                             brand = 'Honda',             price = 84000,   category = 'tuner',             type = 'automobile',    shop = 'pdm' },
@@ -1381,7 +1382,8 @@ local Vehicles = {
     { model = 'acura2f2f',             name = 'Acura 2f2f',                              brand = 'Acura',             price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = 'adolescentem8gte',      name = 'Custom Adolescente M8 GTE',               brand = 'Custom',            price = 350000,  category = 'premium',           type = 'automobile',    shop = 'luxury' },
     { model = 'adr8',                  name = 'Custom AD R8',                            brand = 'Custom',            price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
-    { model = 'africat',               name = 'Honda Africat',                           brand = 'Honda',             price = 31500,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que wrafricat (linha 1887)
+    -- { model = 'africat',               name = 'Honda Africat',                           brand = 'Honda',             price = 31500,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'africatag',             name = 'Honda Africatag',                         brand = 'Honda',             price = 31500,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'agerars',               name = 'Koenigsegg Agera RS',                     brand = 'Koenigsegg',        price = 2250000, category = 'super',             type = 'automobile',    shop = 'luxury' },
     { model = 'agsas300mec',           name = 'Custom Agsas300mec',                      brand = 'Custom',            price = 250000,  category = 'sports',            type = 'automobile',    shop = 'pdm' },
@@ -1420,9 +1422,11 @@ local Vehicles = {
     { model = 'armored18velar',        name = 'Land Rover Armored 18 Velar',             brand = 'Land Rover',        price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
     { model = 'armoredmacanturbo',     name = 'Porsche Armored Macan Turbo',             brand = 'Porsche',           price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
     { model = 'armorednightshark',     name = 'Custom Armored Nightshark',               brand = 'Custom',            price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
-    { model = 'armoredx7m60i',         name = 'BMW Armored X7 M6 0i',                    brand = 'BMW',               price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que wrarmoredx7m60i (linha 1906)
+    -- { model = 'armoredx7m60i',         name = 'BMW Armored X7 M6 0i',                    brand = 'BMW',               price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
     { model = 'as350bope',             name = 'Airbus As350 BOPE',                       brand = 'Airbus',            price = 50000,   category = 'helicopters',       type = 'heli',          shop = 'none' },
-    { model = 'audiq7',                name = 'Audi Q7',                                 brand = 'Audi',              price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que wrq7 (linha 1982)
+    -- { model = 'audiq7',                name = 'Audi Q7',                                 brand = 'Audi',              price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
     { model = 'audiq8',                name = 'Audi Q8',                                 brand = 'Audi',              price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
     { model = 'audirs6',               name = 'Audi RS6',                                brand = 'Audi',              price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'audirs7',               name = 'Audi RS7',                                brand = 'Audi',              price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
@@ -1470,7 +1474,8 @@ local Vehicles = {
     { model = 'cb500policia2',         name = 'Honda CB500 Policia 2',                   brand = 'Honda',             price = 50000,   category = 'sportbikes',        type = 'bike',          shop = 'none' },
     { model = 'cbrr',                  name = 'Honda CBR R',                             brand = 'Honda',             price = 31500,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'celta',                 name = 'Chevrolet Celta',                         brand = 'Chevrolet',         price = 31500,   category = 'compacts',          type = 'automobile',    shop = 'pdm' },
-    { model = 'cg125',                 name = 'Honda Cg125',                             brand = 'Honda',             price = 31500,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
+    -- DESATIVADO: sem arquivo .yft (timeout ao spawnar)
+    -- { model = 'cg125',                 name = 'Honda Cg125',                             brand = 'Honda',             price = 31500,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'cg160',                 name = 'Honda CG160',                             brand = 'Honda',             price = 31500,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'chargerf8',             name = 'Dodge Charger F8',                        brand = 'Dodge',             price = 85000,   category = 'muscle',            type = 'automobile',    shop = 'pdm' },
     { model = 'chevette',              name = 'Hummer Chevette',                         brand = 'Hummer',            price = 200000,  category = 'sportsclassics',    type = 'automobile',    shop = 'pdm' },
@@ -1608,7 +1613,8 @@ local Vehicles = {
     { model = 'heli1',                 name = 'Custom Heli1',                            brand = 'Custom',            price = 500000,  category = 'helicopters',       type = 'heli',          shop = 'pdm' },
     { model = 'helihp',                name = 'Custom Heli HP',                          brand = 'Custom',            price = 500000,  category = 'helicopters',       type = 'heli',          shop = 'pdm' },
     { model = 'hevo',                  name = 'Hummer Hevo',                             brand = 'Hummer',            price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
-    { model = 'hiaceil',               name = 'Custom Hiaceil',                          brand = 'Custom',            price = 55000,   category = 'vans',              type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que wrhiaceil (linha 1956)
+    -- { model = 'hiaceil',               name = 'Custom Hiaceil',                          brand = 'Custom',            price = 55000,   category = 'vans',              type = 'automobile',    shop = 'pdm' },
     { model = 'hilux2019',             name = 'Toyota Hilux2019',                        brand = 'Toyota',            price = 95000,   category = 'offroad',           type = 'automobile',    shop = 'pdm' },
     { model = 'hondafk8',              name = 'Honda Fk8',                               brand = 'Honda',             price = 84000,   category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = 'hornet',                name = 'Honda Hornet',                            brand = 'Honda',             price = 31500,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
@@ -1694,7 +1700,8 @@ local Vehicles = {
     { model = 'nh2r',                  name = 'Custom Nh2r',                             brand = 'Custom',            price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'nimbus16',              name = 'Custom Nimbus16',                         brand = 'Custom',            price = 500000,  category = 'helicopters',       type = 'heli',          shop = 'pdm' },
     { model = 'ninja250fi',            name = 'Kawasaki Ninja250fi',                     brand = 'Kawasaki',          price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
-    { model = 'nissan370z',            name = 'Nissan 370z',                             brand = 'Nissan',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que 370z (linha 1360)
+    -- { model = 'nissan370z',            name = 'Nissan 370z',                             brand = 'Nissan',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = 'nissangtr2',            name = 'Nissan GTR 2',                            brand = 'Nissan',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = 'nissangtrnismo',        name = 'Nissan GTR Nismo',                        brand = 'Nissan',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
     { model = 'nissanskyliner34',      name = 'Nissan Skyline R34',                      brand = 'Nissan',            price = 120000,  category = 'tuner',             type = 'automobile',    shop = 'pdm' },
@@ -1771,7 +1778,8 @@ local Vehicles = {
     { model = 'r50',                   name = 'Custom R50',                              brand = 'Custom',            price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'r8spyder20',            name = 'Audi R8 Spyder 20',                       brand = 'Audi',              price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'ram226x6',              name = 'Dodge Ram226 X6',                         brand = 'Dodge',             price = 95000,   category = 'offroad',           type = 'automobile',    shop = 'pdm' },
-    { model = 'ram2500',               name = 'Dodge Ram2500',                           brand = 'Dodge',             price = 95000,   category = 'offroad',           type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que wrram2500 (linha 1987)
+    -- { model = 'ram2500',               name = 'Dodge Ram2500',                           brand = 'Dodge',             price = 95000,   category = 'offroad',           type = 'automobile',    shop = 'pdm' },
     { model = 'redja',                 name = 'Custom Redja',                            brand = 'Custom',            price = 250000,  category = 'sports',            type = 'automobile',    shop = 'pdm' },
     { model = 'redjb',                 name = 'Custom Redjb',                            brand = 'Custom',            price = 250000,  category = 'sports',            type = 'automobile',    shop = 'pdm' },
     { model = 'regera',                name = 'Koenigsegg Regera',                       brand = 'Koenigsegg',        price = 2250000, category = 'super',             type = 'automobile',    shop = 'luxury' },
@@ -1779,7 +1787,8 @@ local Vehicles = {
     { model = 'rencaptur',             name = 'Renault Rencaptur',                       brand = 'Renault',           price = 84000,   category = 'suvs',              type = 'automobile',    shop = 'pdm' },
     { model = 'rmodbacalar',           name = 'Bentley Bacalar',                         brand = 'Bentley',           price = 375000,  category = 'sports',            type = 'automobile',    shop = 'luxury' },
     { model = 'rmodbentleygt',         name = 'Bentley Bentley GT',                      brand = 'Bentley',           price = 375000,  category = 'sports',            type = 'automobile',    shop = 'luxury' },
-    { model = 'rmodbmwm8',             name = 'BMW BMW M8',                              brand = 'BMW',               price = 250000,  category = 'sports',            type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que wrbmwm8 (linha 1926)
+    -- { model = 'rmodbmwm8',             name = 'BMW BMW M8',                              brand = 'BMW',               price = 250000,  category = 'sports',            type = 'automobile',    shop = 'pdm' },
     { model = 'rmodcamaro',            name = 'Chevrolet Camaro',                        brand = 'Chevrolet',         price = 175000,  category = 'sports',            type = 'automobile',    shop = 'pdm' },
     { model = 'rmodcharger69',         name = 'Dodge Charger 69',                        brand = 'Dodge',             price = 250000,  category = 'sports',            type = 'automobile',    shop = 'pdm' },
     { model = 'rmodessenza',           name = 'Lamborghini E SS Enza',                   brand = 'Lamborghini',       price = 375000,  category = 'sports',            type = 'automobile',    shop = 'luxury' },
@@ -1806,7 +1815,8 @@ local Vehicles = {
     { model = 'rs318',                 name = 'Audi RS3 18',                             brand = 'Audi',              price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'rs520',                 name = 'Custom RS 520',                           brand = 'Custom',            price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'rs6wb',                 name = 'Audi RS6 WB',                             brand = 'Audi',              price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
-    { model = 'rs7',                   name = 'Audi RS7',                                brand = 'Audi',              price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que audirs7 (linha 1428)
+    -- { model = 'rs7',                   name = 'Audi RS7',                                brand = 'Audi',              price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'rsvr16',                name = 'Land Rover RS V R1 6',                    brand = 'Land Rover',        price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
     { model = 'rt70',                  name = 'Custom RT 70',                            brand = 'Custom',            price = 250000,  category = 'sports',            type = 'automobile',    shop = 'pdm' },
     { model = 's10',                   name = 'Chevrolet S10',                           brand = 'Chevrolet',         price = 66500,   category = 'offroad',           type = 'automobile',    shop = 'pdm' },
@@ -1923,7 +1933,7 @@ local Vehicles = {
     { model = 'wrbmwi8exc',            name = 'BMW Bmwi8exc',                            brand = 'BMW',               price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'wrbmwm1',               name = 'BMW Bmwm1',                               brand = 'BMW',               price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'wrbmwm4',               name = 'BMW BMW M4',                              brand = 'BMW',               price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
-    { model = 'wrbmwm8',               name = 'BMW BMW M8',                              brand = 'BMW',               price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
+    { model = 'wrbmwm8',               name = 'BMW M8',                                  brand = 'BMW',               price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'wrbmwx6civ',            name = 'BMW BMW X6 Civ',                          brand = 'BMW',               price = 120000,  category = 'suvs',              type = 'automobile',    shop = 'pdm' },
     { model = 'wrbrickade',            name = 'Custom Brickade',                         brand = 'Custom',            price = 75000,   category = 'commercial',        type = 'automobile',    shop = 'pdm' },
     { model = 'wrbugbomb',             name = 'Custom Bugb OM B',                        brand = 'Custom',            price = 55000,   category = 'vans',              type = 'automobile',    shop = 'pdm' },
@@ -1992,7 +2002,8 @@ local Vehicles = {
     { model = 'wrrelampagomarquinhos', name = 'Custom Relampag OM Arquinhos',            brand = 'Custom',            price = 350000,  category = 'racing',            type = 'automobile',    shop = 'pdm' },
     { model = 'wrrs3pol',              name = 'Audi RS3 POL',                            brand = 'Audi',              price = 50000,   category = 'emergency',         type = 'automobile',    shop = 'none' },
     { model = 'wrrtracer900',          name = 'Yamaha RT Racer900',                      brand = 'Yamaha',            price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
-    { model = 'wrs10',                 name = 'Chevrolet S10',                           brand = 'Chevrolet',         price = 66500,   category = 'offroad',           type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que s10 (linha 1812), sem .yft
+    -- { model = 'wrs10',                 name = 'Chevrolet S10',                           brand = 'Chevrolet',         price = 66500,   category = 'offroad',           type = 'automobile',    shop = 'pdm' },
     { model = 'wrspeedoems',           name = 'Triumph Speedoems',                       brand = 'Triumph',           price = 50000,   category = 'vans',              type = 'automobile',    shop = 'none' },
     { model = 'wrspiderkid',           name = 'Custom Spider KID',                       brand = 'Custom',            price = 350000,  category = 'racing',            type = 'automobile',    shop = 'pdm' },
     { model = 'wrsprinter22',          name = 'Mercedes Sprinter 22',                    brand = 'Mercedes',          price = 75000,   category = 'commercial',        type = 'automobile',    shop = 'pdm' },
@@ -2010,10 +2021,13 @@ local Vehicles = {
     { model = 'wrtacoma22cot',         name = 'Toyota TAC OM A22 COT',                   brand = 'Toyota',            price = 95000,   category = 'offroad',           type = 'automobile',    shop = 'pdm' },
     { model = 'wrtaycan',              name = 'Porsche Taycan',                          brand = 'Porsche',           price = 150000,  category = 'euro',              type = 'automobile',    shop = 'pdm' },
     { model = 'wrtiger1200',           name = 'BMW Tige R1200',                          brand = 'BMW',               price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
-    { model = 'wrtiger1200c',          name = 'BMW Tige R1200 C',                        brand = 'BMW',               price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
-    { model = 'wrtiger1200cgo',        name = 'BMW Tige R1200 CGO',                      brand = 'BMW',               price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
+    -- DESATIVADO: sem arquivo .yft (timeout ao spawnar)
+    -- { model = 'wrtiger1200c',          name = 'BMW Tige R1200 C',                        brand = 'BMW',               price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
+    -- DESATIVADO: sem arquivo .yft (timeout ao spawnar)
+    -- { model = 'wrtiger1200cgo',        name = 'BMW Tige R1200 CGO',                      brand = 'BMW',               price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'wrtiger1200got',        name = 'BMW Tige R1200 GOT',                      brand = 'BMW',               price = 50000,   category = 'sportbikes',        type = 'bike',          shop = 'none' },
-    { model = 'wrtiger1200mcq',        name = 'BMW Tige R1200 MCQ',                      brand = 'BMW',               price = 50000,   category = 'sportbikes',        type = 'bike',          shop = 'none' },
+    -- DESATIVADO: sem arquivo .yft (timeout ao spawnar)
+    -- { model = 'wrtiger1200mcq',        name = 'BMW Tige R1200 MCQ',                      brand = 'BMW',               price = 50000,   category = 'sportbikes',        type = 'bike',          shop = 'none' },
     { model = 'wrtiger1200mct',        name = 'BMW Tige R1200 MCT',                      brand = 'BMW',               price = 50000,   category = 'sportbikes',        type = 'bike',          shop = 'none' },
     { model = 'wrtracer900',           name = 'Yamaha Tracer900',                        brand = 'Yamaha',            price = 45000,   category = 'sportbikes',        type = 'bike',          shop = 'pdm' },
     { model = 'wrtrailblazergtf',      name = 'Chevrolet Trailblazer GTF',               brand = 'Chevrolet',         price = 50000,   category = 'offroad',           type = 'automobile',    shop = 'none' },
@@ -2022,7 +2036,8 @@ local Vehicles = {
     { model = 'wrtrailfed',            name = 'Chevrolet Trail FED',                     brand = 'Chevrolet',         price = 50000,   category = 'offroad',           type = 'automobile',    shop = 'none' },
     { model = 'wrtrashrio',            name = 'Custom Trashrio',                         brand = 'Custom',            price = 75000,   category = 'commercial',        type = 'automobile',    shop = 'pdm' },
     { model = 'wrtrxmct',              name = 'Dodge TRX MCT',                           brand = 'Dodge',             price = 50000,   category = 'emergency',         type = 'automobile',    shop = 'none' },
-    { model = 'wruno',                 name = 'Fiat UNO',                                brand = 'Fiat',              price = 31500,   category = 'compacts',          type = 'automobile',    shop = 'pdm' },
+    -- DUPLICADO: mesmo nome que fiatuno (linha 1546), sem .yft
+    -- { model = 'wruno',                 name = 'Fiat UNO',                                brand = 'Fiat',              price = 31500,   category = 'compacts',          type = 'automobile',    shop = 'pdm' },
     { model = 'wrunotelecom',          name = 'Fiat Unotelec OM',                        brand = 'Fiat',              price = 31500,   category = 'compacts',          type = 'automobile',    shop = 'pdm' },
     { model = 'wrurus',                name = 'Lamborghini Urus',                        brand = 'Lamborghini',       price = 180000,  category = 'suvs',              type = 'automobile',    shop = 'luxury' },
     { model = 'wrurushp',              name = 'Lamborghini Urus HP',                     brand = 'Lamborghini',       price = 180000,  category = 'suvs',              type = 'automobile',    shop = 'luxury' },
