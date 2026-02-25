@@ -344,14 +344,36 @@ end
 function QBCore.Functions.SpawnVehicle(source, model, coords, warp)
     local ped = GetPlayerPed(source)
     local modelHash = type(model) == 'string' and joaat(model) or model
+    local modelName = type(model) == 'string' and model or tostring(model)
     if not coords then coords = GetEntityCoords(ped) end
     local heading = coords.w and coords.w or 0.0
     local timeout = 10000 -- 10 segundos de timeout
     local elapsed = 0
 
-    print('^3[qb-core] [SpawnVehicle] Criando veiculo - modelo: ' .. tostring(model) .. ' hash: ' .. tostring(modelHash) .. ' para jogador: ' .. tostring(source) .. '^0')
+    -- Detectar tipo do veículo via QBCore.Shared.Vehicles
+    local vehicleType = 'automobile'
+    if QBCore.Shared.Vehicles[modelName] and QBCore.Shared.Vehicles[modelName].type then
+        vehicleType = QBCore.Shared.Vehicles[modelName].type
+    end
 
-    local veh = CreateVehicle(modelHash, coords.x, coords.y, coords.z, heading, true, true)
+    print('^3[qb-core] [SpawnVehicle] Criando veiculo - modelo: ' .. tostring(model) .. ' hash: ' .. tostring(modelHash) .. ' tipo: ' .. vehicleType .. ' para jogador: ' .. tostring(source) .. '^0')
+
+    -- Usar CreateVehicleServerSetter (mais confiável para veículos especiais no OneSync)
+    local veh = nil
+    if CreateVehicleServerSetter then
+        veh = CreateVehicleServerSetter(modelHash, vehicleType, coords.x, coords.y, coords.z, heading)
+        if veh and veh ~= 0 then
+            print('^2[qb-core] [SpawnVehicle] CreateVehicleServerSetter OK para modelo: ' .. tostring(model) .. '^0')
+        else
+            print('^3[qb-core] [SpawnVehicle] CreateVehicleServerSetter falhou, tentando CreateVehicle padrao...^0')
+            veh = nil
+        end
+    end
+
+    -- Fallback para CreateVehicle padrão
+    if not veh or veh == 0 then
+        veh = CreateVehicle(modelHash, coords.x, coords.y, coords.z, heading, true, true)
+    end
 
     if not veh or veh == 0 then
         print('^1[qb-core] [SpawnVehicle] CreateVehicle retornou 0 ou nil para modelo: ' .. tostring(model) .. '^0')
