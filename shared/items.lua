@@ -445,7 +445,7 @@ QBShared.Items = {
     -- ============================================================
     -- Empregos Ilegais (Roubos, Desmanche, etc.)
     -- ============================================================
-    dollars2                     = { name = 'dollars2', label = 'Dinheiro Sujo', weight = 0, type = 'item', image = 'dirty_money.png', unique = false, useable = false, shouldClose = false, description = 'Dinheiro obtido ilegalmente' },
+    dollars2                     = { name = 'dollars2', label = 'Dinheiro Sujo', weight = 0, type = 'item', image = 'dollars2.png', unique = false, useable = false, shouldClose = false, description = 'Dinheiro obtido ilegalmente' },
     plantabaixa                  = { name = 'plantabaixa', label = 'Planta Baixa', weight = 200, type = 'item', image = 'plantabaixa.png', unique = false, useable = false, shouldClose = false, description = 'Planta baixa de um estabelecimento' },
     bluecard                     = { name = 'bluecard', label = 'Cartão Azul', weight = 100, type = 'item', image = 'bluecard.png', unique = false, useable = false, shouldClose = false, description = 'Cartão de acesso azul para arrombamentos' },
     blackcard                    = { name = 'blackcard', label = 'Cartão Preto', weight = 100, type = 'item', image = 'blackcard.png', unique = false, useable = false, shouldClose = false, description = 'Cartão de acesso preto para cofres' },
