@@ -475,4 +475,15 @@ QBShared.Items = {
     woodlog                      = { name = 'woodlog', label = 'Tora de Madeira', weight = 2000, type = 'item', image = 'woodlog.png', unique = false, useable = false, shouldClose = false, description = 'Tora de madeira cortada' },
     grao                         = { name = 'grao', label = 'Grãos', weight = 300, type = 'item', image = 'grao.png', unique = false, useable = false, shouldClose = false, description = 'Grãos colhidos na fazenda' },
 
+    -- ============================================================
+    -- Mochilas (Loja VIP) - Upgrade de capacidade de peso
+    -- ============================================================
+    mochila_10kg                 = { name = 'mochila_10kg', label = 'Mochila +10 kg', weight = 500, type = 'item', image = 'mochila-10kg.png', unique = false, useable = true, shouldClose = true, description = 'Upgrade de mochila: +10.000g de capacidade' },
+    mochila_20kg                 = { name = 'mochila_20kg', label = 'Mochila +20 kg', weight = 500, type = 'item', image = 'mochila-20kg.png', unique = false, useable = true, shouldClose = true, description = 'Upgrade de mochila: +20.000g de capacidade' },
+    mochila_80kg                 = { name = 'mochila_80kg', label = 'Mochila +80 kg', weight = 500, type = 'item', image = 'mochila-80kg.png', unique = false, useable = true, shouldClose = true, description = 'Upgrade de mochila: +80.000g de capacidade' },
+    mochila_120kg                = { name = 'mochila_120kg', label = 'Mochila +120 kg', weight = 500, type = 'item', image = 'mochila-120kg.png', unique = false, useable = true, shouldClose = true, description = 'Upgrade de mochila: +120.000g de capacidade' },
+    mochila_150kg                = { name = 'mochila_150kg', label = 'Mochila +150 kg', weight = 500, type = 'item', image = 'mochila-150kg.png', unique = false, useable = true, shouldClose = true, description = 'Upgrade de mochila: +150.000g de capacidade' },
+    mochila_200kg                = { name = 'mochila_200kg', label = 'Mochila +200 kg', weight = 500, type = 'item', image = 'mochila-200kg.png', unique = false, useable = true, shouldClose = true, description = 'Upgrade de mochila: +200.000g de capacidade' },
+    mochila_400kg                = { name = 'mochila_400kg', label = 'Mochila +400 kg', weight = 500, type = 'item', image = 'mochila-400kg.png', unique = false, useable = true, shouldClose = true, description = 'Upgrade de mochila: +400.000g de capacidade' },
+
 }
